@@ -132,6 +132,7 @@ void parseDXF::mousePressEvent(QMouseEvent *event)
         connect(&act_handSort, &QAction::triggered, [this](){
             sortShape(sortTask->handSort);
         });
+        act_output.setVisible(false);
         menu.exec(QCursor::pos());
     }
 }
